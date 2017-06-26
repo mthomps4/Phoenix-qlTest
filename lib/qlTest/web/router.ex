@@ -20,7 +20,12 @@ defmodule QlTest.Web.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", QlTest.Web do
-  #   pipe_through :api
-  # end
+  scope "/api", QlTest.Web do
+    pipe_through :api
+  end
+
+  forward "/graph", Absinthe.Plug,
+    schema: QlTest.Schema
+  forward "/graphiql", Absinthe.Plug.GraphiQL,
+    schema: QlTest.Schema
 end

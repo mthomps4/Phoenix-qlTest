@@ -62,6 +62,7 @@ defmodule QlTest.Mixfile do
      {:uuid, "~> 1.1" },
      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
      {:absinthe, "~> 1.3"},
+     {:absinthe_ecto, git: "https://github.com/absinthe-graphql/absinthe_ecto.git"},
      {:absinthe_plug, github: "absinthe-graphql/absinthe_plug", branch: "master"}
     ]
   end
