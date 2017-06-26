@@ -1,8 +1,9 @@
 defmodule QlTest.Schema do
   use Absinthe.Schema
 
-  import_types QlTest.Schema.Types
-
+  import_types QlTest.Post.Schema.Types
+  import_types QlTest.User.Schema.Types
+  
   query do
     @desc "Get all blog posts"
     field :posts, list_of(:post) do
