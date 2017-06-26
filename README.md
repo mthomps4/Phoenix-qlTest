@@ -12,7 +12,9 @@ Phoenix Mongo GraphQL Test
 - created a schema for query - web/schema.ex
 - add a resolver for schema types - web/resolvers/x
 
+- Sibling to Web for Ecto.Schema -- _Blog/post.ex_
+
 ## In Mongo
 - Created DB
 - Created Collection
-- Insert Dummy Data 
+- Insert Dummy Data
