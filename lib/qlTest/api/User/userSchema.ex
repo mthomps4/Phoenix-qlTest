@@ -1,6 +1,6 @@
-## IF POSSIBLE Import into Schema.ex and avoid Long A File 
-
-
+## IF POSSIBLE Import into Schema.ex and avoid Long A File
+#
+#
 # defmodule QlTest.User.Schema do
 #   use Absinthe.Schema
 #
